@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duplicate Tab Closer – Help</title>
+    <title>Fewer Tabs – Help</title>
     <link rel="icon" href="icon.png">
     <style>
         :root {
@@ -79,9 +79,9 @@
 <body>
     <header>
         <img src="icon.png" alt="">
-        <h1>Duplicate Tab Closer</h1>
+        <h1>Fewer Tabs</h1>
     </header>
-    <p class="tagline">A Chrome extension that finds and closes duplicate tabs.</p>
+    <p class="tagline">A Chrome extension for people with too many tabs. It closes duplicate tabs and helps you find the tabs you haven't looked at in a while. (It was called Duplicate Tab Closer until version 1.4.)</p>
 
     <h2>Closing duplicates</h2>
     <p>Click the extension icon in the toolbar and choose:</p>
@@ -90,11 +90,19 @@
         <li><strong>Deduplicate Across All Windows</strong>: closes extra copies anywhere, keeping the copy in your current window when there is one.</li>
         <li><strong>View Duplicate Stats</strong>: lists every page that's open more than once.</li>
     </ul>
-    <p>One copy of each page always stays open. The extension keeps, in order: a pinned tab, the tab you're looking at, a tab in the current window, then the oldest copy.</p>
+    <p>One copy of each page always stays open. The extension keeps, in order: a pinned tab, the tab you're looking at, a tab in the current window, then the oldest copy (or the newest, if you chose <strong>Keep the new tab</strong> in the settings).</p>
     <p>Tip: pin the extension (the puzzle icon in Chrome's toolbar, then the pin) so it's one click away.</p>
 
+    <h2>Tabs you haven't looked at lately</h2>
+    <p>Below the buttons, the popup lists the tabs you haven't viewed for the longest, with how long it's been. Choose <strong>This window</strong> or <strong>All windows</strong>.</p>
+    <ul>
+        <li>Click a tab in the list to switch to it.</li>
+        <li>Click <strong>×</strong> to close it. If you've looked at the tab, pinned it or it started playing audio since the list was shown, it's left open.</li>
+    </ul>
+    <p>Pinned tabs, tabs playing audio and the tab showing in each window are never listed.</p>
+
     <h2>Closing duplicates automatically</h2>
-    <p>Turn on <strong>Auto-Close Duplicates</strong> in the settings and the extension handles duplicates as they open, within the same window. What happens is up to you:</p>
+    <p>With <strong>Auto-Close Duplicates</strong> on, the extension handles duplicates as they open, within the same window. It's on for new installs; you can turn it off on the welcome page or in the settings. It only reacts to a tab opening a page: browsing inside a tab you already have never triggers it. What happens is up to you:</p>
     <div class="choice">
         <strong>Keep the existing tab and bring it here <span class="default">(default)</span></strong>
         The new tab closes, and your existing tab moves to where the new one opened and is shown. You keep your scroll position, playing video or half-written form, and it's right where you're looking.
@@ -105,7 +113,7 @@
     </div>
     <div class="choice">
         <strong>Keep the new tab</strong>
-        The existing tab closes and the new one stays.
+        The existing tab closes and the new one stays, so you lose the existing tab's back history.
     </div>
     <p>Pinned tabs are never closed or moved. Tabs in a tab group aren't moved out of their group; you're switched to them instead. A tab opened in the background (for example with Ctrl/Cmd+click) doesn't take you away from what you're reading.</p>
 
